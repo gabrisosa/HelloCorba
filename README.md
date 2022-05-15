@@ -1,14 +1,17 @@
 # HelloCorba
 
-## PYTHON  
+###### Run server and client
 
-###### Run Python Server  
+From HelloCorba directory on the terminal run:
+```console  
+$ idlj -fall Hello.idl
+$ javac HelloServer.java
+$ javac HelloClient.java
+```
 
-From HelloPython directory on the terminal run:  
+On different terminal windows run:
 ```console  
-$ python2 HelloServer.py  
-```  
-###### Run Python Client  
-```console  
-$ python2 HelloClient.py  
+$ tnameserv -ORBInitialPort 2000
+$ java Server -ORBInitialHost localhost -ORBInitialPort 2000
+$ java Client -ORBInitialHost localhost -ORBInitialPort 2000
 ```
