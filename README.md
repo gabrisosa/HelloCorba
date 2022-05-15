@@ -1,15 +1,14 @@
 # HelloCorba
 
-###### Run server and client
+A simple Hello World in CORBA using Java
 
-From HelloCorba directory on the terminal run:
+###### From HelloCorba directory on the terminal run:
 ```console  
 $ idlj -fall Hello.idl
 $ javac HelloServer.java
 $ javac HelloClient.java
 ```
-
-On different terminal windows run:
+###### On different terminal windows run:
 ```console  
 $ tnameserv -ORBInitialPort 2000
 $ java Server -ORBInitialHost localhost -ORBInitialPort 2000
